@@ -1,0 +1,13 @@
+<h2>{{message}}</h2>
+<p [id]="sayHelloId" [style.color]="fontColor">
+    You can set my color in the component!
+</p>
+<button type="button" [disabled]="canClick" (click)="sayMessage()">
+    Trigger alert message
+</button>
+
+<h1>{{valor}}</h1>
+<button (click)="incrementar()">+</button>
+<button (click)="decrementar()">-</button>
+
+<button (click)="canClick=!canClick">habilitar/deshabilitar</button>
